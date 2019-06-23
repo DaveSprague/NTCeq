@@ -102,4 +102,6 @@ namespace NTCSenor {
         else
             table = table_B3950
     }
+    
+    set(NTC_B.B3950)
 }
