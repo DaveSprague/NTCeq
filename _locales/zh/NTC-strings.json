@@ -1,0 +1,5 @@
+{
+    "NTCSensor|block": "NTC 温度传感器",
+    "NTCSensor.Temperature|block": "获取温度 %adc",
+    "NTCSensor.set|block": "设置温度系数B为 %B"
+}

@@ -75,7 +75,7 @@ let table = table_B3380
  * NTC mudule
  */
 //% weight=20 color=#10F080 icon="\uf2c8" block="NTC Sensor"
-namespace NTCSenor {
+namespace NTCSensor {
     /**
      * get NTC Temperature
      * @param adc is ADC convert value, eg: 256
