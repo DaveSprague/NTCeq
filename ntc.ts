@@ -85,7 +85,7 @@ namespace NTCSensor {
     export function Temperature(adc: number): number {
         for (let i = 0; i < table.length; i++) {
             if (adc > table[i])
-                return i - 40;
+                return 10*(i - 40);
         }
         return 85;
     }
