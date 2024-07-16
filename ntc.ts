@@ -87,7 +87,7 @@ namespace NTCSensor {
             if (adc > table[i])
                 return 10*(i - 40);
         }
-        return 85;
+        return 850;
     }
 
     /**
