@@ -14,6 +14,7 @@ enum NTC_B {
 }
 
 let beta = 3380
+let Rf = 10000
 
 /**
  * NTC mudule
@@ -52,6 +53,16 @@ namespace NTCSensor {
             beta = 3380
         else
             beta = 3950
+    }
+
+    /**
+     * set Fixed Resistor value
+     * @param Rf is NTC Rf value, eg: NTC_B.Rf
+     */
+    //% blockId="NTCSenor_SET" block="set Rf value %B"
+    //% weight=100 blockGap=8
+    export function set(Rf: number): void {
+        Rf = number
     }
     
     set(NTC_B.B3950)
