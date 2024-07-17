@@ -28,17 +28,17 @@ namespace NTCSensor {
     //% weight=80 blockGap=8
     export function Temperature(adc: number): number {
         // convert the value to resistance
-        number = 1023 / number - 1
-        number = 10000 / number
+        adc = 1023 / adc - 1
+        adc = 10000 / adc
       
       let steinhart = 850;
-      steinhart = number / 10000;     // (R/Ro)
+      steinhart = adc / 10000;     // (R/Ro)
       steinhart = log(steinhart);                  // ln(R/Ro)
       steinhart /= beta;                   // 1/B * ln(R/Ro)
       steinhart += 1.0 / (25 + 273.15); // + (1/To)
       steinhart = 1.0 / steinhart;                 // Invert
       steinhart -= 273.15;                         // convert absolute temp to C
-        return steinhart;  // tenths of degrees
+        return steinhart;  
     }
 
     /**
