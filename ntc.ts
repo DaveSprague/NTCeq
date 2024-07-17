@@ -38,7 +38,7 @@ namespace NTCSensorEq {
       steinhart += 1.0 / (25 + 273.15); // + (1/To)
       steinhart = 1.0 / steinhart;                 // Invert
       steinhart -= 273.15;                         // convert absolute temp to C
-        return steinhart.toFixed(2);  
+        return Number(steinhart.toFixed(2))  
     }
 
     /**
