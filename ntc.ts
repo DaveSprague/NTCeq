@@ -1,4 +1,4 @@
-/**
+q/**
  * makecode NTC Temperature Sensor Package.
  * http://www.micropython.org.cn
  */
@@ -19,7 +19,7 @@ let Rf = 10000
  * NTC mudule
  */
 //% weight=20 color=#10F080 icon="\uf2c8" block="NTC Sensor"
-namespace NTCSensor {
+namespace NTCSensorEq {
     /**
      * get NTC Temperature
      * @param adc is ADC convert value, eg: 256
