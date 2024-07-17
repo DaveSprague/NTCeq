@@ -33,7 +33,7 @@ namespace NTCSensor {
       
       let steinhart = 850;
       steinhart = adc / 10000;     // (R/Ro)
-      steinhart = log(steinhart);                  // ln(R/Ro)
+      steinhart = Math.log(steinhart);                  // ln(R/Ro)
       steinhart /= beta;                   // 1/B * ln(R/Ro)
       steinhart += 1.0 / (25 + 273.15); // + (1/To)
       steinhart = 1.0 / steinhart;                 // Invert
