@@ -1,6 +1,5 @@
 /**
  * makecode NTC Temperature Sensor Package.
- * From microbit/micropython Chinese community.
  * http://www.micropython.org.cn
  */
 
