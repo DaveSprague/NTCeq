@@ -54,15 +54,15 @@ namespace NTCSensorEq {
             beta = 3950
     }
 
-    /**
-     * set Fixed Resistor value
-     * @param Rfixed is NTC Fixed R value, eg: 10000
-     */
-    //% blockId="NTCSenor_SET" block="set Rf value %B"
-    //% weight=100 blockGap=8
-    export function setr(Rfixed: number): void {
-        Rf = Rfixed
-    }
+    // /**
+    //  * set Fixed Resistor value
+    //  * @param Rfixed is NTC Fixed R value, eg: 10000
+    //  */
+    // //% blockId="NTCSenor_SET" block="set Rf value %B"
+    // //% weight=100 blockGap=8
+    // export function setr(Rfixed: number): void {
+    //     Rf = Rfixed
+    // }
     
     setb(NTC_B.B3950)
 }
