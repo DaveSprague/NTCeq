@@ -48,7 +48,7 @@ namespace NTCSensor {
      */
     //% blockId="NTCSenor_SET" block="set B value %B"
     //% weight=100 blockGap=8
-    export function set(B: NTC_B): void {
+    export function setb(B: NTC_B): void {
         if (B == NTC_B.B3380)
             beta = 3380
         else
@@ -57,13 +57,13 @@ namespace NTCSensor {
 
     /**
      * set Fixed Resistor value
-     * @param Rf is NTC Rf value, eg: NTC_B.Rf
+     * @param Rfixed is NTC Fixed R value, eg: 10000
      */
     //% blockId="NTCSenor_SET" block="set Rf value %B"
     //% weight=100 blockGap=8
-    export function set(Rf: number): void {
-        Rf = number
+    export function setr(Rfixed: number): void {
+        Rf = Rfixed
     }
     
-    set(NTC_B.B3950)
+    setb(NTC_B.B3950)
 }
