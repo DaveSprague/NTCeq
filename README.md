@@ -1,6 +1,10 @@
 # NTC
 makecode NTC Temperature Sensor extension for microbit  
 
+Author: DaveSprague
+Date: 2024.Jul
+
+based on code by
 Author: shaoziyang  
 Date:   2018.Mar  
 
@@ -43,11 +47,8 @@ adc is the result of analog input. Function will return temperature in degree Ce
 
 MIT
 
-Copyright (c) 2018, microbit/micropython Chinese community  
+Copyright (c) 2024, David L Sprague 
 
 ## Supported targets  
 
 * for PXT/microbit
-
-
-[From microbit/micropython Chinese community](http://www.micropython.org.cn) 
