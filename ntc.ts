@@ -45,7 +45,7 @@ namespace NTCSensorEq {
      * set NTC B value
      * @param B is NTC B value, eg: NTC_B.B3380
      */
-    //% blockId="NTCSenor_SET" block="set B value %B"
+    //% blockId="NTCSensor_SET" block="set B value %B"
     //% weight=100 blockGap=8
     export function setb(B: NTC_B): void {
         if (B == NTC_B.B3380)
