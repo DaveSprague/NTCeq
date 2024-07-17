@@ -1,4 +1,4 @@
-q/**
+/**
  * makecode NTC Temperature Sensor Package.
  * http://www.micropython.org.cn
  */
