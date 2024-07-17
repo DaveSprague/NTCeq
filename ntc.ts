@@ -38,12 +38,9 @@ namespace NTCSensorEq {
       steinhart += 1.0 / (25 + 273.15); // + (1/To)
       steinhart = 1.0 / steinhart;                 // Invert
       steinhart -= 273.15;                         // convert absolute temp to C
-        return round(steinhart, 2)  
+        return round(100*steinhart)/100
     }
 
-    function round(value, decimals) {
-         return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
-    } 
 
     /**
      * set NTC B value
