@@ -41,6 +41,15 @@ namespace NTCSensorEq {
         return Math.round(100*steinhart)/100
     }
 
+    /**
+     * Calculate the natural logarithm (ln) of a number
+     */
+    //% block="ln %n"
+    //% weight=70
+    export function ln(n: number): number {
+        return Math.log(n);
+    }
+
 
     /**
      * set NTC B value
