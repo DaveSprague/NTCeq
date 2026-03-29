@@ -11,7 +11,7 @@ enum NTC_B {
 }
 
 let beta = 3380
-let Rf = 10000 // Fixed pull-up resistor (10k Ohms)
+let Rfixed = 10000 // Fixed pull-up resistor (10k Ohms)
 
 //% weight=20 color=#10F080 icon="\uf2c8" block="NTC Sensor"
 namespace NTCSensorEq {
@@ -20,13 +20,13 @@ namespace NTCSensorEq {
      * Calculate temperature from an analog pin reading (0-1023).
      * @param adc the raw value from the analog pin, eg: 512
      */
-    //% blockId="NTCSenor_GET" block="get temperature %adc"
+    //% blockId="NTCSensor_GET" block="get temperature %adc"
     //% weight=80 blockGap=8
     export function Temperature(adc: number): number {
         // --- 1. THE CIRCUIT (Voltage Divider) ---
         // Convert the 10-bit ADC value into the NTC's resistance.
         // Formula: R_ntc = R_fixed / ((1023 / adc) - 1)
-        let ntcResistance = Rf / (1023 / adc - 1);
+        let ntcResistance = Rfixed / (1023 / adc - 1);
 
         // --- 2. THE PHYSICS (Beta Equation) ---
         // Standard NTC specs: 10k Ohms at 25°C (298.15 Kelvin)
@@ -43,16 +43,6 @@ namespace NTCSensorEq {
 
         // Round to 2 decimal places (keeping it as a number type)
         return Math.round(celsius * 100) / 100;
-    }
-
-    /**
-     * Calculate the natural logarithm (ln) of a number.
-     * Useful for manual math in blocks!
-     */
-    //% block="ln %n"
-    //% weight=70
-    export function ln(n: number): number {
-        return Math.log(n);
     }
 
     /**
@@ -74,8 +64,8 @@ namespace NTCSensorEq {
      */
     //% blockId="NTCSensor_SET_RF" block="set Rf value %Rfixed"
     //% weight=60
-    export function setr(Rfixed: number): void {
-        Rf = Rfixed;
+    export function setr(newRfixed: number): void {
+        Rfixed = newRfixed;
     }
 
     // Default initialization
